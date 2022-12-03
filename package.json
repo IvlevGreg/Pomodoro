@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "pomodoro",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://ivlevgreg.github.io/Pomodoro",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
