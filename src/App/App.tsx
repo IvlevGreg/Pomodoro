@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './app.module.css';
+import { AppComponent } from './AppComponent';
 
 export function App() {
-  return <h1 className={styles.title}>Pomodoro</h1>;
+  return <AppComponent />;
 }
