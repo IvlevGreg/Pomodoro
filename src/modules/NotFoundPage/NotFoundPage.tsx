@@ -5,7 +5,7 @@ import styles from './notfoundpage.module.css';
 export function NotFoundPage() {
   const navigate = useNavigate();
   function handle() {
-    navigate('/posts');
+    navigate('/');
   }
 
   return (
