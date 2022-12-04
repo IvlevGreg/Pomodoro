@@ -6,5 +6,5 @@ interface IButtonMain {
 }
 
 export function ButtonMain({ text }: IButtonMain) {
-  return <button className={styles.main}>{text}</button>;
+  return <button className={styles.button}>{text}</button>;
 }

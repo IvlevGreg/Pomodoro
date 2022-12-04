@@ -1,0 +1,21 @@
+:root {
+  /* color */
+
+  --color-main: #333333;
+  --color-secondary: #ffffff;
+  --color-additional: #ffffff;
+
+  --color-btn-main: #ffffff;
+
+  --color-btn-secondary: #dc3e22;
+  --color-btn-secondary-hover: #ffffff;
+  --color-btn-secondary-disabled: #c4c4c4;
+
+  /* background */
+  --bac-btn-main: #a8b64f;
+  --bac-btn-main-hover: #899441;
+
+  --bac-btn-secondary: #dc3e22;
+  --bac-btn-secondary-hover: #dc3e22;
+  --bac-btn-secondary-disabled: #c4c4c4;
+}

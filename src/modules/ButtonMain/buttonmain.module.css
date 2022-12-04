@@ -1,2 +1,7 @@
-.main {
+.button {
+  padding: 19px 50px;
+
+  border: none;
+  background-color: var(--bac-btn-main);
+  color: var(--color-btn-main);
 }

@@ -16,7 +16,7 @@ export function TaskTimer() {
         </button>
         <p className={styles.currentTask}>Задача 1 - Сверстать сайт </p>
         <ButtonMain text="Старт" />
-        <ButtonSecondary text="Стоп" />
+        <ButtonSecondary text="Стоп" isDisabled={true} />
       </div>
     </article>
   );

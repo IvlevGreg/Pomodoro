@@ -1,2 +1,12 @@
-.secondary {
+.button {
+  padding: 19px 48px;
+
+  border: 2px solid var(--bac-btn-secondary);
+  background-color: transparent;
+  color: var(--color-btn-secondary);
+}
+
+.button:disabled {
+  border: 2px solid var(--bac-btn-secondary-disabled);
+  color: var(--color-btn-secondary-disabled);
 }

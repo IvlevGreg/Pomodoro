@@ -5,7 +5,7 @@ import { TaskTimer } from './TaskTimer';
 
 export function Tasks() {
   return (
-    <section>
+    <section className={styles.section}>
       <TaskList />
       <TaskTimer />
     </section>

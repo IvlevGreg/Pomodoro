@@ -3,8 +3,13 @@ import styles from './buttonsecondary.module.css';
 
 interface IButtonSecondary {
   text: string;
+  isDisabled?: boolean;
 }
 
-export function ButtonSecondary({ text }: IButtonSecondary) {
-  return <button className={styles.secondary}>{text}</button>;
+export function ButtonSecondary({ text, isDisabled }: IButtonSecondary) {
+  return (
+    <button className={styles.button} disabled={isDisabled}>
+      {text}
+    </button>
+  );
 }
