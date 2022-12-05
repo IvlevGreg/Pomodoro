@@ -1,2 +1,26 @@
-.main {
+.button {
+  padding: 17px 48px;
+
+  border: 2px solid var(--bac-btn-main);
+  background-color: var(--bac-btn-main);
+  color: var(--color-btn-main);
+
+  transition: background 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--bac-btn-main-hover);
+  border-color: var(--bac-btn-main-hover);
+}
+
+.button:focus {
+  outline: none;
+  opacity: 0.8;
+  border-color: var(--bac-btn-main-focus);
+}
+
+.button:active {
+  opacity: 0.7;
 }

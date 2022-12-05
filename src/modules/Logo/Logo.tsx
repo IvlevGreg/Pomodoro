@@ -5,7 +5,7 @@ import styles from './logo.module.css';
 
 export function Logo() {
   return (
-    <Link to={`/`} className={styles.postLink}>
+    <Link to={`/`} className={styles.link}>
       <IconLogo />
     </Link>
   );

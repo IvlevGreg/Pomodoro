@@ -5,9 +5,11 @@ import { TaskTimer } from './TaskTimer';
 
 export function Tasks() {
   return (
-    <section>
-      <TaskList />
-      <TaskTimer />
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <TaskList />
+        <TaskTimer />
+      </div>
     </section>
   );
 }

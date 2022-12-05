@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "SFUIDisplay";
+  src: local("SFUIDisplay-Bold"), local("SFUIDisplayBold"), url("./SFUIDisplay-Bold.woff2") format("woff2"),
+    url("SFUIDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SFUIDisplay";
+  src: local("SFUIDisplay-Light"), local("SFUIDisplayLight"), url("./SFUIDisplay-Light.woff2") format("woff2"),
+    url("SFUIDisplay-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SFUIDisplay";
+  src: local("SFUIDisplay-Medium"), local("SFUIDisplayMedium"), url("./SFUIDisplay-Medium.woff2") format("woff2"),
+    url("SFUIDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SFUIDisplay";
+  src: local("SFUIDisplay-Regular"), local("SFUIDisplayRegular"), url("./SFUIDisplay-Regular.woff2") format("woff2"),
+    url("SFUIDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SFUIDisplay";
+  src: local("SFUIDisplay-Thin"), local("SFUIDisplayThin"), url("./SFUIDisplay-Thin.woff2") format("woff2"),
+    url("SFUIDisplay-Thin.woff") format("woff");
+  font-weight: 100;
+}

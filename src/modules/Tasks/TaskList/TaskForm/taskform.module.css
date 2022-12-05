@@ -1,0 +1,28 @@
+.inputTask {
+  margin-bottom: 25px;
+  padding: 19px 15px;
+  height: 17px;
+  width: 100%;
+  max-width: 370px;
+  display: block;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+
+  border: none;
+
+  background: var(--bac-secondary);
+  outline-color: var(--bor-input-active);
+
+  transition: outline-color 0.3s ease;
+}
+
+.inputTask:hover {
+  outline: 2px solid var(--bor-input-hover);
+  border-radius: 2px;
+}
+
+.inputTask:focus {
+  outline-color: var(--bor-input-active);
+}

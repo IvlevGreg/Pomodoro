@@ -1,2 +1,26 @@
 .link {
+  color: var(--color-header-link);
+  transition: color 0.3s ease;
+}
+
+.link path {
+  transition: fill 0.3s ease;
+}
+
+.link:hover {
+  color: var(--color-header-link-hover);
+}
+.link:hover g > path:first-child {
+  fill: var(--color-header-link-hover);
+}
+
+.link:focus {
+  outline-color: var(--color-header-link-hover);
+  color: var(--color-header-link-hover);
+}
+.link:focus g > path:first-child {
+  fill: var(--color-header-link-hover);
+}
+.link:active {
+  opacity: 0.8;
 }
