@@ -10,13 +10,18 @@ export function TaskTimer() {
     <article>
       <TaskHeader />
       <div className={styles.container}>
-        <div className={styles.leftTime}>25:00</div>
-        <button className={styles.increaseTime}>
-          <IconPlus />
-        </button>
+        <div className={styles.leftTimeContainer}>
+          <p className={styles.leftTime}>25:00</p>
+
+          <button className={styles.increaseTime}>
+            <IconPlus />
+          </button>
+        </div>
         <p className={styles.currentTask}>Задача 1 - Сверстать сайт </p>
-        <ButtonMain text="Старт" />
-        <ButtonSecondary text="Стоп" isDisabled={true} />
+        <div className={styles.buttons}>
+          <ButtonMain text="Старт" />
+          <ButtonSecondary text="Стоп" isDisabled={true} />
+        </div>
       </div>
     </article>
   );

@@ -6,8 +6,10 @@ import { TaskTimer } from './TaskTimer';
 export function Tasks() {
   return (
     <section className={styles.section}>
-      <TaskList />
-      <TaskTimer />
+      <div className={styles.container}>
+        <TaskList />
+        <TaskTimer />
+      </div>
     </section>
   );
 }

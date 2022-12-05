@@ -8,8 +8,9 @@ export function Links() {
     <nav className={styles.nav}>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <Link to={`/statistic`} className={styles.postLink}>
-            <IconStatistic /> Статистика
+          <Link to={`/statistic`} className={styles.link}>
+            <IconStatistic />
+            Статистика
           </Link>
         </li>
       </ul>

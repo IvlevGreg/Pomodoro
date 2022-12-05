@@ -28,4 +28,8 @@
   --bac-btn-secondary-hover: #dc3e22;
 
   --bac-btn-secondary-disabled: #c4c4c4;
+
+  /* border */
+  --bor-input-hover: #a8b64f;
+  --bor-input-active: #899441;
 }
