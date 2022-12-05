@@ -24,3 +24,15 @@
 .link:active {
   opacity: 0.8;
 }
+
+@media (max-width: 379px) {
+  .logoDekstop {
+    display: none;
+  }
+}
+
+@media (min-width: 380px) {
+  .logoMobile {
+    display: none;
+  }
+}

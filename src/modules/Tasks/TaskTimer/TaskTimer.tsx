@@ -7,7 +7,7 @@ import styles from './tasktimer.module.css';
 
 export function TaskTimer() {
   return (
-    <article>
+    <article className={styles.article}>
       <TaskHeader />
       <div className={styles.container}>
         <div className={styles.leftTimeContainer}>
