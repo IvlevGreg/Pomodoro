@@ -9,3 +9,37 @@
   line-height: 33px;
   font-weight: 700;
 }
+.list {
+  max-width: 370px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+.item {
+  padding: 19px 30px 19px 0;
+
+  border-top: 1px solid var(--bac-supplementary);
+  border-bottom: 1px solid var(--bac-supplementary);
+}
+.taskNumber {
+  display: inline-block;
+  /* padding: 4px 9px; */
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  vertical-align: middle;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+
+  outline: 1px solid var(--bac-additional);
+  border-radius: 50%;
+}
+.taskName {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+}
