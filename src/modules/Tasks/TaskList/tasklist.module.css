@@ -18,6 +18,7 @@
 }
 .item {
   padding: 19px 30px 19px 0;
+  position: relative;
 
   border-top: 1px solid var(--bac-supplementary);
   border-bottom: 1px solid var(--bac-supplementary);
@@ -42,4 +43,100 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 17px;
+}
+
+.dropdownButtonOpen {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  background: none;
+  border: none;
+
+  transition: opacity 0.3s ease;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.dropdownButtonOpen circle {
+  transition: fill 0.3s ease;
+}
+
+.dropdownButtonOpen:hover circle {
+  fill: var(--bac-btn-main-hover);
+}
+
+.dropdownButtonOpen:active {
+  opacity: 0.7;
+}
+
+.dropdownList {
+  position: absolute;
+  top: 20px;
+  right: 50%;
+
+  padding: 4px 0;
+  margin: 0;
+
+  border: 1px solid var(--bac-additional);
+
+  list-style: none;
+  transform: translateX(50%);
+}
+
+.dropdownList::after {
+  position: absolute;
+  z-index: 10;
+  content: "";
+  top: -6px;
+  right: 50%;
+
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid var(--bac-additional);
+  border-top: 1px solid var(--bac-additional);
+
+  background: var(--bac-main);
+
+  transform: translateX(50%) rotate(45deg);
+}
+
+.dropdownItem {
+}
+
+.dropdownItemIcon {
+  margin-right: 9.5px;
+}
+
+.dropdownButton {
+  padding: 9px 15px;
+  margin: 0;
+  width: 100%;
+
+  display: flex;
+  border: none;
+  align-items: center;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  color: var(--color-tasks-dropdown);
+
+  background: none;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdownButton:hover,
+.dropdownButton:focus {
+  outline: none;
+  background: var(--bac-secondary);
+}
+
+.dropdownButton:active {
+  opacity: 0.7;
 }
