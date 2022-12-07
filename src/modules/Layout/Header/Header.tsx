@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from '../Logo';
+import { Logo } from '../../Common/Logo';
 import styles from './header.module.css';
 import { Links } from './Links';
 

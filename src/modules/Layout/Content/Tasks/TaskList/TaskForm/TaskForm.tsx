@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonMain } from '../../../ButtonMain';
+import { ButtonMain } from '../../../../../Common/ButtonMain';
 import styles from './taskform.module.css';
 
 export function TaskForm() {

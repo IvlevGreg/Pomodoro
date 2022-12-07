@@ -1,9 +1,10 @@
 import React from 'react';
-import { ButtonMain } from '../../ButtonMain';
-import { ButtonSecondary } from '../../ButtonSecondary';
+import { ButtonMain } from '../../../../Common/ButtonMain';
+import { ButtonSecondary } from '../../../../Common/ButtonSecondary';
 import { IconPlus } from './IconPlus';
 import { TaskHeader } from './TaskHeader';
 import styles from './tasktimer.module.css';
+import TestTimer from './timer';
 
 export function TaskTimer() {
   return (
@@ -12,7 +13,7 @@ export function TaskTimer() {
       <div className={styles.container}>
         <div className={styles.leftTimeContainer}>
           <p className={styles.leftTime}>25:00</p>
-
+          <TestTimer />
           <button className={styles.increaseTime}>
             <IconPlus />
           </button>
