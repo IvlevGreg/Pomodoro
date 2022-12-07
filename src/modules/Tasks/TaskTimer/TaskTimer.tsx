@@ -7,7 +7,7 @@ import styles from './tasktimer.module.css';
 
 export function TaskTimer() {
   return (
-    <article>
+    <article className={styles.article}>
       <TaskHeader />
       <div className={styles.container}>
         <div className={styles.leftTimeContainer}>
@@ -19,8 +19,8 @@ export function TaskTimer() {
         </div>
         <p className={styles.currentTask}>Задача 1 - Сверстать сайт </p>
         <div className={styles.buttons}>
-          <ButtonMain text="Старт" />
-          <ButtonSecondary text="Стоп" isDisabled={true} />
+          {/* <ButtonMain text="Старт" />
+          <ButtonSecondary text="Стоп" isDisabled={true} /> */}
         </div>
       </div>
     </article>

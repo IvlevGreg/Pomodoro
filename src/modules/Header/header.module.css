@@ -15,3 +15,23 @@
 .title {
   display: none;
 }
+
+@media (max-width: 1380px) {
+  .container {
+    padding: 14px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 14px 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 14px 20px;
+    /* flex-direction: column; */
+    /* gap: 20px; */
+  }
+}

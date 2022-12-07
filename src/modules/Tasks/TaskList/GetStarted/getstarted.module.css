@@ -3,7 +3,6 @@
   padding: 0;
   padding-left: 20px;
   margin-bottom: 25px;
-  max-width: 450px;
 
   font-size: 16px;
   line-height: 33px;
@@ -11,4 +10,16 @@
 
 .item::marker {
   color: var(--color-list-style);
+}
+@media (max-width: 1024px) {
+  .list {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 812px) {
+  .list {
+    max-width: none;
+  }
 }

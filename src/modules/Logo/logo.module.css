@@ -10,7 +10,8 @@
 .link:hover {
   color: var(--color-header-link-hover);
 }
-.link:hover g > path:first-child {
+.link:hover g > path:first-child,
+.link:hover svg > path {
   fill: var(--color-header-link-hover);
 }
 
@@ -18,9 +19,22 @@
   outline-color: var(--color-header-link-hover);
   color: var(--color-header-link-hover);
 }
-.link:focus g > path:first-child {
+.link:focus g > path:first-child,
+.link:focus svg > path {
   fill: var(--color-header-link-hover);
 }
 .link:active {
   opacity: 0.8;
+}
+
+@media (max-width: 379px) {
+  .logoDekstop {
+    display: none;
+  }
+}
+
+@media (min-width: 380px) {
+  .logoMobile {
+    display: none;
+  }
 }

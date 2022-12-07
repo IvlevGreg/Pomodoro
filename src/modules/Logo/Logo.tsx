@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { IconLogo } from './IconLogo';
+import { IconLogoDekstop } from './IconLogoDekstop';
+import { IconLogoMobile } from './IconLogoMobile';
+
 import styles from './logo.module.css';
 
 export function Logo() {
   return (
     <Link to={`/`} className={styles.link}>
-      <IconLogo />
+      <IconLogoDekstop />
+      <IconLogoMobile />
     </Link>
   );
 }
