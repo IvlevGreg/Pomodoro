@@ -32,9 +32,9 @@ export function TaskList() {
                 onClick={(e: React.MouseEvent) => {
                   const node = document.getElementById('dropdown_root');
                   if (!node) return;
-                  // node.style.position = 'absolute';
-                  // node.style.top = `${e.pageY}px`;
-                  // node.style.left = `${e.pageX}px`;
+                  node.style.position = 'absolute';
+                  node.style.top = `${e.pageY}px`;
+                  node.style.left = `${e.pageX}px`;
                 }}
               >
                 <DropdownOpenButtonIcon />
