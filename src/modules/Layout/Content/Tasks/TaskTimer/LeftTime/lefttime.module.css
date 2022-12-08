@@ -1,0 +1,76 @@
+.leftTimeContainer {
+  position: relative;
+}
+
+.leftTime {
+  margin: 0;
+
+  font-size: 150px;
+  line-height: 1.2;
+  font-weight: 200;
+  text-align: center;
+}
+
+.increaseTime {
+  position: absolute;
+  top: 50%;
+  right: -75px;
+  transform: translateY(-50%);
+
+  padding: 0;
+  width: 50px;
+  height: 50px;
+
+  background: none;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.increaseTime:hover circle {
+  fill: var(--bac-btn-main-hover);
+}
+
+.increaseTime:focus circle {
+  opacity: 0.8;
+  fill: var(--bac-btn-main-focus);
+}
+
+.increaseTime:focus {
+  outline: none;
+}
+
+.increaseTime path {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.increaseTime:focus path {
+  transform: rotate(45deg);
+}
+
+.increaseTime:active svg {
+  opacity: 0.9;
+}
+
+@media (max-width: 1380px) {
+  .leftTime {
+    font-size: 100px;
+  }
+
+  .increaseTime svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .leftTime {
+    font-size: 80px;
+  }
+
+  .increaseTime svg {
+    width: 40px;
+    height: 40px;
+  }
+}

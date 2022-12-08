@@ -1,7 +1,5 @@
-import { observer } from 'mobx-react';
 import React from 'react';
 import { Dropdown } from '../../../../Common/Dropdown';
-import { Timer } from '../../../../MobX/Timer';
 import { DropdownDecrementIcon } from './dropdownDecrementIcon';
 import { DropdownDeleteIcon } from './dropdownDeleteIcon';
 import { DropdownEditcon } from './dropdownEditIcon';
@@ -12,20 +10,6 @@ import { TaskForm } from './TaskForm';
 import styles from './tasklist.module.css';
 
 export function TaskList() {
-  const myTimer = new Timer();
-
-  // Build a "user interface" that uses the observable state.
-  const TimerView = observer(({ timer }: { timer: Timer }) => (
-    <button onClick={() => timer.reset()}>
-      Seconds passed: {timer.secondsPassed}
-    </button>
-  ));
-
-  // Update the 'Seconds passed: X' text every second.
-  setInterval(() => {
-    myTimer.increase();
-  }, 1000);
-
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Ура! Теперь можно начать работать:</h2>
@@ -36,8 +20,6 @@ export function TaskList() {
           <span className={styles.taskNumber}>12</span>
 
           <span className={styles.taskName}>Сверстать сайт</span>
-
-          <TimerView timer={myTimer} />
 
           <Dropdown
             // onOpen={() => console.log('open')}

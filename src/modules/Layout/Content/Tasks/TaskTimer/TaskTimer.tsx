@@ -1,29 +1,19 @@
-import React from 'react';
-import { ButtonMain } from '../../../../Common/ButtonMain';
-import { ButtonSecondary } from '../../../../Common/ButtonSecondary';
-import { IconPlus } from './IconPlus';
+import { observer } from 'mobx-react';
+import { myTimerMobX } from '../../../../MobX/Timer';
+import { Buttons } from './Buttons';
+import { LeftTime } from './LeftTime';
 import { TaskHeader } from './TaskHeader';
 import styles from './tasktimer.module.css';
-import TestTimer from './timer';
 
-export function TaskTimer() {
+export const TaskTimer = observer(() => {
   return (
     <article className={styles.article}>
       <TaskHeader />
       <div className={styles.container}>
-        <div className={styles.leftTimeContainer}>
-          <p className={styles.leftTime}>25:00</p>
-          <TestTimer />
-          <button className={styles.increaseTime}>
-            <IconPlus />
-          </button>
-        </div>
+        <LeftTime timer={myTimerMobX} />
         <p className={styles.currentTask}>Задача 1 - Сверстать сайт </p>
-        <div className={styles.buttons}>
-          {/* <ButtonMain text="Старт" />
-          <ButtonSecondary text="Стоп" isDisabled={true} /> */}
-        </div>
+        <Buttons timer={myTimerMobX} />
       </div>
     </article>
   );
-}
+});
