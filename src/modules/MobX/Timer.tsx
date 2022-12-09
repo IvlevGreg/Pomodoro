@@ -15,6 +15,8 @@ export class Timer {
   secondsRemaining = this.initialValue;
   currentInterval: NodeJS.Timer | null = null;
   status: 'START' | 'STOP' = 'STOP';
+  startButtonText: 'Старт' | 'Продолжить' | 'Пауза' = 'Старт';
+  stopButtonText: 'Стоп' | 'Пропустить' | 'Сделано' = 'Стоп';
 
   constructor() {
     makeAutoObservable(this);
@@ -48,19 +50,19 @@ export class Timer {
     if (!this.currentInterval) {
       this.interval();
       this.status = 'START';
+      this.startButtonText = 'Пауза';
+    } else {
+      clearInterval(this.currentInterval);
+      this.currentInterval = null;
+      this.status = 'STOP';
+      this.startButtonText = 'Продолжить';
+      this.stopButtonText = 'Сделано';
     }
   };
 
   stopTimer = () => {
     if (this.currentInterval) {
-      clearInterval(this.currentInterval);
-      this.currentInterval = null;
-      this.status = 'STOP';
     }
-  };
-
-  isTimerStart = () => {
-    return this.status === 'START';
   };
 
   isTimerStop = () => {

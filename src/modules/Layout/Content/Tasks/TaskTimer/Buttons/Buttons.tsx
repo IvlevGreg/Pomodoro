@@ -7,13 +7,9 @@ import styles from './buttons.module.css';
 export const Buttons = observer(({ timer }: { timer: Timer }) => {
   return (
     <div className={styles.buttons}>
-      <ButtonMain
-        text="Старт"
-        isDisabled={timer.isTimerStart()}
-        onClick={timer.startTimer}
-      />
+      <ButtonMain text={timer.startButtonText} onClick={timer.startTimer} />
       <ButtonSecondary
-        text="Стоп"
+        text={timer.stopButtonText}
         isDisabled={timer.isTimerStop()}
         onClick={timer.stopTimer}
       />
