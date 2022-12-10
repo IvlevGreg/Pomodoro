@@ -7,7 +7,7 @@ export function IconStatistic() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_8221_158)">
+      <g clipPath="url(#clip0_8221_158)">
         <path
           d="M10 20H14V4H10V20ZM4 20H8V12H4V20ZM16 9V20H20V9H16Z"
           fill="#DC3E22"
