@@ -10,13 +10,24 @@ import { observer } from 'mobx-react';
 // reset: () => void
 // }
 
+type TPomodoroStatus = 'POMODORO' | 'SHORT_BREAK' | 'LONG_BREAK' | 'NOT_START';
+type TTimerStatus = 'ACTIVE' | 'PAUSE';
+
 export class Timer {
   initialValue = 1500;
+  initialValuePomodro = 1500;
+  initialValueShortBreak = 300;
+  initialValueLongBreak = 900;
+
   secondsRemaining = this.initialValue;
   currentInterval: NodeJS.Timer | null = null;
-  status: 'START' | 'STOP' = 'STOP';
+  pomodoroStatus: TPomodoroStatus = 'NOT_START';
+  timerStatus: TTimerStatus = 'PAUSE';
+  pomodoroNumber: 1 | 2 | 3 | 4 = 1;
+
   startButtonText: 'Старт' | 'Продолжить' | 'Пауза' = 'Старт';
   stopButtonText: 'Стоп' | 'Пропустить' | 'Сделано' = 'Стоп';
+  stopButtonIsDisabled: boolean = true;
 
   constructor() {
     makeAutoObservable(this);
@@ -49,24 +60,28 @@ export class Timer {
   startTimer = () => {
     if (!this.currentInterval) {
       this.interval();
-      this.status = 'START';
+      // this.status = 'START';
       this.startButtonText = 'Пауза';
+      this.stopButtonIsDisabled = false;
     } else {
       clearInterval(this.currentInterval);
       this.currentInterval = null;
-      this.status = 'STOP';
       this.startButtonText = 'Продолжить';
       this.stopButtonText = 'Сделано';
+      this.stopButtonIsDisabled = false;
     }
   };
 
   stopTimer = () => {
     if (this.currentInterval) {
+      clearInterval(this.currentInterval);
     }
+    this.secondsRemaining = this.initialValue;
   };
 
   isTimerStop = () => {
-    return this.status === 'STOP';
+    // return this.status === 'STOP';
+    return false;
   };
 }
 

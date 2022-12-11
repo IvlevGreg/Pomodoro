@@ -10,7 +10,7 @@ export const Buttons = observer(({ timer }: { timer: Timer }) => {
       <ButtonMain text={timer.startButtonText} onClick={timer.startTimer} />
       <ButtonSecondary
         text={timer.stopButtonText}
-        isDisabled={timer.isTimerStop()}
+        isDisabled={timer.stopButtonIsDisabled}
         onClick={timer.stopTimer}
       />
     </div>

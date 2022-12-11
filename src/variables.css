@@ -22,6 +22,10 @@
   --bac-additional: #c4c4c4;
   --bac-supplementary: #e4e4e4;
 
+  --bac-header-not-start: #c4c4c4;
+  --bac-header-pomodoro: #dc3e22;
+  --bac-header-break: #a8b64f;
+
   --bac-btn-main: #a8b64f;
   --bac-btn-main-hover: #899441;
   --bac-btn-main-focus: #899441;

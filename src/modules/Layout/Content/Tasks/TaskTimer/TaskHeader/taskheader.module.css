@@ -22,3 +22,13 @@
   font-size: 16px;
   line-height: 17px;
 }
+
+.POMODORO {
+  background-color: var(--bac-header-pomodoro);
+}
+.SHORT_BREAK {
+  background-color: var(--bac-header-break);
+}
+.LONG_BREAK {
+  background-color: var(--bac-header-break);
+}

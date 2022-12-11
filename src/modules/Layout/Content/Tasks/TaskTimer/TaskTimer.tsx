@@ -8,7 +8,7 @@ import styles from './tasktimer.module.css';
 export const TaskTimer = observer(() => {
   return (
     <article className={styles.article}>
-      <TaskHeader />
+      <TaskHeader timer={myTimerMobX} />
       <div className={styles.container}>
         <LeftTime timer={myTimerMobX} />
         <p className={styles.currentTask}>Задача 1 - Сверстать сайт </p>
