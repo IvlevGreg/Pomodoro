@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/Pomodoro/static/css/main.e009ed27.css",
-    "main.js": "/Pomodoro/static/js/main.5cd7d310.js",
+    "main.css": "/Pomodoro/static/css/main.20337b93.css",
+    "main.js": "/Pomodoro/static/js/main.020f7da1.js",
     "static/js/787.b1af5461.chunk.js": "/Pomodoro/static/js/787.b1af5461.chunk.js",
+    "static/media/SFUIDisplay-Light.woff": "/Pomodoro/static/media/SFUIDisplay-Light.70cbf532b316a0425c0e.woff",
+    "static/media/SFUIDisplay-Thin.woff": "/Pomodoro/static/media/SFUIDisplay-Thin.f6a96ccdeb71e593f093.woff",
+    "static/media/SFUIDisplay-Medium.woff": "/Pomodoro/static/media/SFUIDisplay-Medium.691073e2b9ef80d5c702.woff",
+    "static/media/SFUIDisplay-Bold.woff": "/Pomodoro/static/media/SFUIDisplay-Bold.111df0192eebd73b0bdf.woff",
+    "static/media/SFUIDisplay-Regular.woff": "/Pomodoro/static/media/SFUIDisplay-Regular.1b6ee1f6f9e80f37ff4e.woff",
+    "static/media/SFUIDisplay-Thin.woff2": "/Pomodoro/static/media/SFUIDisplay-Thin.f3e3310d830ec276a9f9.woff2",
+    "static/media/SFUIDisplay-Light.woff2": "/Pomodoro/static/media/SFUIDisplay-Light.60241fa4b412694abb65.woff2",
+    "static/media/SFUIDisplay-Medium.woff2": "/Pomodoro/static/media/SFUIDisplay-Medium.90312d015521ff21cc61.woff2",
+    "static/media/SFUIDisplay-Bold.woff2": "/Pomodoro/static/media/SFUIDisplay-Bold.de06fd537f47d93309ef.woff2",
+    "static/media/SFUIDisplay-Regular.woff2": "/Pomodoro/static/media/SFUIDisplay-Regular.d5b1bd49ba459767871a.woff2",
     "index.html": "/Pomodoro/index.html",
-    "main.e009ed27.css.map": "/Pomodoro/static/css/main.e009ed27.css.map",
-    "main.5cd7d310.js.map": "/Pomodoro/static/js/main.5cd7d310.js.map",
+    "main.20337b93.css.map": "/Pomodoro/static/css/main.20337b93.css.map",
+    "main.020f7da1.js.map": "/Pomodoro/static/js/main.020f7da1.js.map",
     "787.b1af5461.chunk.js.map": "/Pomodoro/static/js/787.b1af5461.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e009ed27.css",
-    "static/js/main.5cd7d310.js"
+    "static/css/main.20337b93.css",
+    "static/js/main.020f7da1.js"
   ]
 }
