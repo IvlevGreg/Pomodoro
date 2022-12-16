@@ -23,12 +23,9 @@
   line-height: 17px;
 }
 
-.POMODORO {
-  background-color: var(--bac-header-pomodoro);
+.Pomodoro {
+  background-color: var(--pomodoro);
 }
-.SHORT_BREAK {
-  background-color: var(--bac-header-break);
-}
-.LONG_BREAK {
-  background-color: var(--bac-header-break);
+.Break {
+  background-color: var(--break);
 }

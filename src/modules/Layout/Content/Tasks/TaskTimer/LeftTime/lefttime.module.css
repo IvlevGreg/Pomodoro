@@ -9,6 +9,16 @@
   line-height: 1.2;
   font-weight: 200;
   text-align: center;
+
+  transition: color 0.3s ease;
+}
+
+.leftTimePomodoro {
+  color: var(--pomodoro);
+}
+
+.leftTimeBreak {
+  color: var(--break);
 }
 
 .increaseTime {

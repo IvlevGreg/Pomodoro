@@ -15,16 +15,16 @@
   --color-btn-secondary-hover: #ffffff;
   --color-btn-secondary-disabled: #c4c4c4;
 
+  --not-start: #c4c4c4;
+  --pomodoro: #dc3e22;
+  --break: #a8b64f;
+
   --color-list-style: #b7280f;
   /* background */
   --bac-main: #ffffff;
   --bac-secondary: #f4f4f4;
   --bac-additional: #c4c4c4;
   --bac-supplementary: #e4e4e4;
-
-  --bac-header-not-start: #c4c4c4;
-  --bac-header-pomodoro: #dc3e22;
-  --bac-header-break: #a8b64f;
 
   --bac-btn-main: #a8b64f;
   --bac-btn-main-hover: #899441;

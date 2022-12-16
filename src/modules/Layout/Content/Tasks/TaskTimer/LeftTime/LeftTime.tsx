@@ -10,10 +10,18 @@ export const LeftTime = observer(({ timer }: { timer: Timer }) => {
   const minutesToDisplay = twoDigits(
     ((timer.secondsRemaining - (timer.secondsRemaining % 60)) / 60) % 60
   );
+
+  function getAditionalCalss() {
+    if (timer.status.timerStatus === 'Active') {
+      return styles['leftTime' + timer.status.pomodoroStatus];
+    }
+    return null;
+  }
+
   return (
     <div className={styles.leftTimeContainer}>
       <p
-        className={styles.leftTime}
+        className={styles.leftTime + ' ' + getAditionalCalss()}
       >{`${minutesToDisplay}:${secondsToDisplay}`}</p>
 
       <button
