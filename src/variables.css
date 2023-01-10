@@ -15,6 +15,10 @@
   --color-btn-secondary-hover: #ffffff;
   --color-btn-secondary-disabled: #c4c4c4;
 
+  --not-start: #c4c4c4;
+  --pomodoro: #dc3e22;
+  --break: #a8b64f;
+
   --color-list-style: #b7280f;
   /* background */
   --bac-main: #ffffff;

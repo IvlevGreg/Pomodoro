@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 40px;
+
+  color: var(--color-additional);
+  background-color: var(--bac-additional);
+}
+
+.currentTask {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.currentPomodoro {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.Pomodoro {
+  background-color: var(--pomodoro);
+}
+.Break {
+  background-color: var(--break);
+}
