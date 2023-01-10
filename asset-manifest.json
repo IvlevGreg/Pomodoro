@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Pomodoro/static/css/main.20337b93.css",
-    "main.js": "/Pomodoro/static/js/main.020f7da1.js",
+    "main.js": "/Pomodoro/static/js/main.d119d11d.js",
     "static/js/787.b1af5461.chunk.js": "/Pomodoro/static/js/787.b1af5461.chunk.js",
     "static/media/SFUIDisplay-Light.woff": "/Pomodoro/static/media/SFUIDisplay-Light.70cbf532b316a0425c0e.woff",
     "static/media/SFUIDisplay-Thin.woff": "/Pomodoro/static/media/SFUIDisplay-Thin.f6a96ccdeb71e593f093.woff",
@@ -15,11 +15,11 @@
     "static/media/SFUIDisplay-Regular.woff2": "/Pomodoro/static/media/SFUIDisplay-Regular.d5b1bd49ba459767871a.woff2",
     "index.html": "/Pomodoro/index.html",
     "main.20337b93.css.map": "/Pomodoro/static/css/main.20337b93.css.map",
-    "main.020f7da1.js.map": "/Pomodoro/static/js/main.020f7da1.js.map",
+    "main.d119d11d.js.map": "/Pomodoro/static/js/main.d119d11d.js.map",
     "787.b1af5461.chunk.js.map": "/Pomodoro/static/js/787.b1af5461.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20337b93.css",
-    "static/js/main.020f7da1.js"
+    "static/js/main.d119d11d.js"
   ]
 }
